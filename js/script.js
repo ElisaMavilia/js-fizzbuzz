@@ -14,32 +14,7 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna. */
 
 
-/* TEMPLATE FOR HTML
 
-<div class=
-
-// Divisione: n % 3 ===0 ; n % 5 ===0
-
-/* const squareContainer = document.createElement('div');
-
-squareContainer.className = `d-flex justify-content-center align-content-center gap-2;`
-
-squareContainer.setAttribute("container", "square");
-console.log (squareContainer);
- 
-let numSquares = 100;
-let tmpHtml = "";
-let multiple3 = numSquares % 3 ===0;
-let multiple5 = numSquares % 5 ===0;
-
-for (let i = 0; i >=100; i++){
-    tmpHtml += `<div class="square">${i + 1}</div>`;
-}
-
-squareContainer.innerHTML = tmpHtml;
-
-const container = document.querySelector('.container');
-container.append(squareContainer); */
 
 const squaresContainer = document.createElement(`div`);
 squaresContainer.className = "d-flex justify-content-between align-items-center";
