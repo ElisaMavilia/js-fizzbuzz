@@ -22,11 +22,11 @@ let tmpHtml ="";
 const squaresContainer = document.getElementById("squares-container");
 console.log(squaresContainer);
 
-for(let i = 0; i >=numSquares; i++){
+for(let i = 1; i <= numSquares; i++){
     console.log(i);
     let square = document.createElement("div");
-    squaresContainer.setAttribute("class", "single-square");
-    squaresContainer.innerHTML = i;
+    square.setAttribute("class", "single-square");
+    square.innerHTML = i;
     squaresContainer.appendChild(square);
 }
 

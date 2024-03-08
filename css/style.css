@@ -2,11 +2,22 @@
     border: 1px solid red;
 }
 
-.container{
+.wrapper{
     width: 1200px;
+    
+   
 }
 
-.squares-container{
+#squares-container{
+    width: 900px;
+    display:flex;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.single-square{
     width: 80px;
     height: 80px;
     display:flex;
@@ -15,4 +26,3 @@
     color:black;
     background-color: aqua;
 }
-
