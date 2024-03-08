@@ -48,7 +48,7 @@ console.log(squaresContainer);
 
 squaresContainer.setAttribute("class", "single-square");
 
-let numsquares = 100;
+let numSquares = 100;
 let tmpHtml ="";
 
 for(let i = 0; i >=numSquares; i++){
