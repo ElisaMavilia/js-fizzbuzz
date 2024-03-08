@@ -17,24 +17,24 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 
 /* const squaresContainer = document.createElement(`div`); */
-squaresContainer.className = "d-flex justify-content-between align-items-center"; 
+/* squaresContainer.className = "d-flex justify-content-between align-items-center";  */
+/* 
+console.log(squaresContainer); */
 
-console.log(squaresContainer);
-
-squaresContainer.setAttribute("class", "single-square");
+/* squaresContainer.setAttribute("class", "single-square"); */
 
 let numSquares = 100;
-let tmpHtml ="";
+let tmpHtml =""; 
 const squaresContainer = document.getElementById("squares-container");
 
 for(let i = 0; i >=numSquares; i++){
-    tmpHtml += 
+   /*  tmpHtml +=  */
     let square = document.createElement("div");
     square.setAttribute("class", "single-square");
     square.innerhtml = i;
     square.appendChild(square);
 }
 
-const wrapper = document.querySelector(`.squares-container`);
+/* const wrapper = document.querySelector(`.squares-container`);
 wrapper.append(squaresContainer);
-console.log(wrapper);
+console.log(wrapper); */
