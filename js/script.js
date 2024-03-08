@@ -25,8 +25,8 @@ console.log(squaresContainer);
 for(let i = 0; i >=numSquares; i++){
     console.log(i);
     let square = document.createElement("div");
-    square.setAttribute("class", "single-square");
-    square.innerHTML = i;
-    square.appendChild(square);
+    squaresContainer.setAttribute("class", "single-square");
+    squaresContainer.innerHTML = i;
+    squaresContainer.appendChild(square);
 }
 
