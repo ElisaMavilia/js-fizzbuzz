@@ -28,5 +28,15 @@ for(let i = 1; i <= numSquares; i++){
     square.setAttribute("class", "single-square");
     square.innerHTML = i;
     squaresContainer.appendChild(square);
+
+    if( i % 3 ===0){
+        square.innerHTML = "Fizz";
+     } else if(i % 5 ===0){
+         square.innerHTML = "Buzz";
+     } else {
+        square.innerHTML = i;
+     }
 }
+
+
 
