@@ -52,7 +52,7 @@ let numSquares = 100;
 let tmpHtml ="";
 
 for(let i = 0; i >=numSquares; i++){
-    
+    tmpHtml += 
 }
 
 const wrapper = document.querySelector(`.squares-container`);
