@@ -1,3 +1,7 @@
+.debug{
+    border: 1px solid red;
+}
+
 .container{
     width: 1200px;
 }
@@ -9,5 +13,6 @@
 	justify-content: center;
 	align-items: center;
     color:black;
+    background-color: aqua;
 }
 

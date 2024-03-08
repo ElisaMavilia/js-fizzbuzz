@@ -48,12 +48,13 @@ console.log(squaresContainer);
 
 squaresContainer.setAttribute("class", "single-square");
 
-let numbox = 100;
+let numsquares = 100;
 let tmpHtml ="";
 
-for(let i = 0; i >=100; i++){
+for(let i = 0; i >=numSquares; i++){
+    
 }
 
 const wrapper = document.querySelector(`.squares-container`);
 wrapper.append(squaresContainer);
-console.log(squaresContainer);
+console.log(wrapper);
