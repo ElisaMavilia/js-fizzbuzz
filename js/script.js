@@ -14,9 +14,6 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna. */
 
 
-
-
-
 let numSquares = 100;
 let tmpHtml =""; 
 const squaresContainer = document.getElementById("squares-container");
@@ -26,10 +23,9 @@ for(let i = 1; i <= numSquares; i++){
     console.log(i);
     let square = document.createElement("div");
     
-    square.setAttribute("class", "single-square", "fizzbuzz", "fizz", "buzz", "white", "normal");
+    square.setAttribute("class", "single-square", "fizzbuzz", "fizz", "buzz", "white", "normal", "second-square");
     square.innerHTML = i;
     squaresContainer.appendChild(square);
-    
 
     if((i % 3 == 0) && (i % 5 == 0)){
         square.innerHTML = "FizzBuzz";
@@ -49,8 +45,6 @@ for(let i = 1; i <= numSquares; i++){
         square.classList.add("normal");
         square.classList.add("white");
      }
-
-
 }
 
 
