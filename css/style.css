@@ -44,7 +44,7 @@
     overflow-y:auto; 
 }
 
-.single-square:hover{
+.opacity{
     opacity: 0.5;
 }
 

@@ -30,8 +30,16 @@ for(let i = 1; i <= numSquares; i++){
     square.setAttribute("class", "single-square", "fizzbuzz", "fizz", "buzz", "white", "normal", "second-square"); /* al div square assegno un attributo con setAttrute: inizio con class e proseguo con il nome delle classi create sul css */
     square.innerHTML = i; /* modifico l'html di square stampando i numeri da 1 a 100 */
     squaresContainer.appendChild(square); /* square diventa figlio dell'id squares-container */
-
-
+    square.onmouseover = function(){mouseOver()} //aggiunto hover//
+    square.onmouseout = function(){mouseOut()}
+    function mouseOver() {
+       square.style.opacity = "0.5";
+      }
+    
+      function mouseOut() {
+        square.style.opacity="";
+      }
+   
 // creo le condizioni //
     if((i % 3 == 0) && (i % 5 == 0)){ //multipli di 3 e 5 //
         square.innerHTML = "FizzBuzz";
