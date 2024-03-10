@@ -14,7 +14,7 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna. */
 
 
-let numSquares = 100;
+let numSquares = 100; 
 let tmpHtml =""; 
 
 //Prendo un elemento id dall'html //
@@ -33,19 +33,19 @@ for(let i = 1; i <= numSquares; i++){
 
 
 // creo le condizioni //
-    if((i % 3 == 0) && (i % 5 == 0)){
+    if((i % 3 == 0) && (i % 5 == 0)){ //multipli di 3 e 5 //
         square.innerHTML = "FizzBuzz";
         square.classList.add("fizzbuzz");
        
-     } else if(i % 5 ===0){
+     } else if(i % 5 ===0){ // multipli di 5 //
          square.innerHTML = "Buzz", "white";
          square.classList.add("buzz");
 
-     } else if( i % 3 ===0){
+     } else if( i % 3 ===0){ // multipli di 3 //
         square.innerHTML = "Fizz";
         square.classList.add("fizz");
 
-     } else {
+     } else { // altri casi //
         square.innerHTML = i;
         square.classList.add("normal", "white"); 
      }
