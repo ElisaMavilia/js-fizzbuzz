@@ -25,14 +25,19 @@ console.log(squaresContainer);
 for(let i = 1; i <= numSquares; i++){
     console.log(i);
     let square = document.createElement("div");
-    square.setAttribute("class", "single-square");
+    square.setAttribute("class", "single-square","fizzbuzz", "fizz", "buzz", "normal");
     square.innerHTML = i;
     squaresContainer.appendChild(square);
 
-    if( i % 3 ===0){
-        square.innerHTML = "Fizz";
+    if((i % 3 == 0) && (i % 5 == 0)){
+        square.innerHTML = "FizzBuzz";
+        
      } else if(i % 5 ===0){
          square.innerHTML = "Buzz";
+
+     } else if( i % 3 ===0){
+        square.innerHTML = "Fizz";
+
      } else {
         square.innerHTML = i;
      }

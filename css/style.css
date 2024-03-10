@@ -8,6 +8,22 @@
    
 }
 
+.fizzbuzz{
+    background-color: pink;
+}
+
+.fizz{
+    background-color: #aa82ee;
+}
+
+.buzz{
+    background-color: yellow;
+}
+
+.normal{
+    background-color: grey;
+}
+
 #squares-container{
     width: 900px;
     display:flex;
