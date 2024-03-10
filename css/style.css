@@ -3,9 +3,8 @@
 }
 
 .wrapper{
-    width: 1200px;
-    
-   
+    height: 100vh;
+    background-color: black;
 }
 
 .fizzbuzz{
@@ -28,10 +27,12 @@
     width: 900px;
     display:flex;
 	justify-content: center;
-	align-items: center;
+	margin: auto;
     flex-wrap: wrap;
     gap: 10px;
 }
+
+
 
 .single-square{
     width: 80px;
@@ -40,5 +41,6 @@
 	justify-content: center;
 	align-items: center;
     color:black;
+    overflow-y:auto;
   
 }
