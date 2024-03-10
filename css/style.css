@@ -36,11 +36,12 @@
 .single-square{
     width: 80px;
     height: 80px;
+    display: block;
     display:flex;
 	justify-content: center;
 	align-items: center;
     color:black;
-    overflow-y:auto;
+    overflow-y:auto; 
 }
 
 .single-square:hover{
@@ -50,5 +51,3 @@
 .white{
     color: white;
 }
-
-

@@ -16,25 +16,30 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 let numSquares = 100;
 let tmpHtml =""; 
+
+//Prendo un elemento id dall'html //
 const squaresContainer = document.getElementById("squares-container");
 console.log(squaresContainer);
 
+
+// procedo con il ciclo per creare i quadrati (100) //
 for(let i = 1; i <= numSquares; i++){
     console.log(i);
-    let square = document.createElement("div");
+    let square = document.createElement("div"); /* con createElement creo un div denomito square */
     
-    square.setAttribute("class", "single-square", "fizzbuzz", "fizz", "buzz", "white", "normal", "second-square");
-    square.innerHTML = i;
-    squaresContainer.appendChild(square);
+    square.setAttribute("class", "single-square", "fizzbuzz", "fizz", "buzz", "white", "normal", "second-square"); /* al div square assegno un attributo con setAttrute: inizio con class e proseguo con il nome delle classi create sul css */
+    square.innerHTML = i; /* modifico l'html di square stampando i numeri da 1 a 100 */
+    squaresContainer.appendChild(square); /* square diventa figlio dell'id squares-container */
 
+
+// creo le condizioni //
     if((i % 3 == 0) && (i % 5 == 0)){
         square.innerHTML = "FizzBuzz";
         square.classList.add("fizzbuzz");
        
      } else if(i % 5 ===0){
-         square.innerHTML = "Buzz";
+         square.innerHTML = "Buzz", "white";
          square.classList.add("buzz");
-         square.classList.add("white");
 
      } else if( i % 3 ===0){
         square.innerHTML = "Fizz";
@@ -42,8 +47,7 @@ for(let i = 1; i <= numSquares; i++){
 
      } else {
         square.innerHTML = i;
-        square.classList.add("normal");
-        square.classList.add("white");
+        square.classList.add("normal", "white"); 
      }
 }
 
