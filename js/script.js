@@ -38,8 +38,8 @@ for(let i = 1; i <= numSquares; i++){
         square.classList.add("fizzbuzz");
        
      } else if(i % 5 ===0){ // multipli di 5 //
-         square.innerHTML = "Buzz", "white";
-         square.classList.add("buzz");
+         square.innerHTML = "Buzz";
+         square.classList.add("buzz", "white");
 
      } else if( i % 3 ===0){ // multipli di 3 //
         square.innerHTML = "Fizz";
