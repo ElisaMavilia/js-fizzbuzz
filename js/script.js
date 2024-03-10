@@ -37,7 +37,7 @@ for(let i = 1; i <= numSquares; i++){
       }
     
       function mouseOut() {
-        square.style.opacity="";
+        square.style.opacity=""; /* mouseout deve essere vuoto altrimenti l'hover rimane fisso */
       }
    
 // creo le condizioni //
