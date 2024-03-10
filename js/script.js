@@ -25,7 +25,7 @@ console.log(squaresContainer);
 // procedo con il ciclo per creare i quadrati (100) //
 for(let i = 1; i <= numSquares; i++){
     console.log(i);
-    let square = document.createElement("div"); /* con createElement creo un div denomito square */
+    let square = document.createElement("div"); /* con createElement creo un div denominato square */
     
     square.setAttribute("class", "single-square", "fizzbuzz", "fizz", "buzz", "white", "normal", "second-square"); /* al div square assegno un attributo con setAttrute: inizio con class e proseguo con il nome delle classi create sul css */
     square.innerHTML = i; /* modifico l'html di square stampando i numeri da 1 a 100 */
