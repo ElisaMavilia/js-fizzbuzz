@@ -26,7 +26,7 @@ for(let i = 1; i <= numSquares; i++){
     console.log(i);
     let square = document.createElement("div");
     
-    square.setAttribute("class", "single-square", "fizzbuzz", "fizz", "buzz", "normal");
+    square.setAttribute("class", "single-square", "fizzbuzz", "fizz", "buzz", "white", "normal");
     square.innerHTML = i;
     squaresContainer.appendChild(square);
     
@@ -35,10 +35,10 @@ for(let i = 1; i <= numSquares; i++){
         square.innerHTML = "FizzBuzz";
         square.classList.add("fizzbuzz");
        
-
      } else if(i % 5 ===0){
          square.innerHTML = "Buzz";
          square.classList.add("buzz");
+         square.classList.add("white");
 
      } else if( i % 3 ===0){
         square.innerHTML = "Fizz";
@@ -47,7 +47,10 @@ for(let i = 1; i <= numSquares; i++){
      } else {
         square.innerHTML = i;
         square.classList.add("normal");
+        square.classList.add("white");
      }
+
+
 }
 
 

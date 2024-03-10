@@ -9,6 +9,7 @@
 
 .fizzbuzz{
     background-color: pink;
+   
 }
 
 .fizz{
@@ -16,7 +17,7 @@
 }
 
 .buzz{
-    background-color: yellow;
+    background-color: rgb(189, 89, 156);
 }
 
 .normal{
@@ -32,8 +33,6 @@
     gap: 10px;
 }
 
-
-
 .single-square{
     width: 80px;
     height: 80px;
@@ -42,5 +41,12 @@
 	align-items: center;
     color:black;
     overflow-y:auto;
-  
+}
+
+.single-square:hover{
+    opacity: 0.5;
+}
+
+.white{
+    color: white;
 }
