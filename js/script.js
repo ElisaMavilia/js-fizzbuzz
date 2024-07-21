@@ -15,9 +15,8 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 
 let numSquares = 100; 
-let tmpHtml =""; 
 
-//Prendo un elemento id dall'html //
+//prendo un elemento id dall'html //
 const squaresContainer = document.getElementById("squares-container");
 console.log(squaresContainer);
 
@@ -30,26 +29,27 @@ for(let i = 1; i <= numSquares; i++){
     square.setAttribute("class", "single-square", "fizzbuzz", "fizz", "buzz", "white", "normal", "second-square"); /* al div square assegno un attributo con setAttrute: inizio con class e proseguo con il nome delle classi create sul css */
     square.innerHTML = i; /* modifico l'html di square stampando i numeri da 1 a 100 */
     squaresContainer.appendChild(square); /* square diventa figlio dell'id squares-container */
-    square.onmouseover = function(){mouseOver()} //aggiunto hover//
-    square.onmouseout = function(){mouseOut()}
-    function mouseOver() {
-       square.style.opacity = "0.5";
-      }
-    
-      function mouseOut() {
-        square.style.opacity=""; /* mouseout deve essere vuoto altrimenti l'hover rimane fisso */
-      }
+
+   // funzione per il mouseover
+ square.onmouseover = function() {
+      square.style.opacity = "0.5";
+  };
+
+  // funzione per il mouseout
+  square.onmouseout = function() {
+      square.style.opacity = "";
+  };
    
 // creo le condizioni //
     if((i % 3 == 0) && (i % 5 == 0)){ //multipli di 3 e 5 //
         square.innerHTML = "FizzBuzz";
         square.classList.add("fizzbuzz");
        
-     } else if(i % 5 ===0){ // multipli di 5 //
+     } else if(i % 5 === 0){ // multipli di 5 //
          square.innerHTML = "Buzz";
          square.classList.add("buzz", "white");
 
-     } else if( i % 3 ===0){ // multipli di 3 //
+     } else if( i % 3 === 0){ // multipli di 3 //
         square.innerHTML = "Fizz";
         square.classList.add("fizz");
 
