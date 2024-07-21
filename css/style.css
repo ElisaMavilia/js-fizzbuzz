@@ -5,6 +5,30 @@
 .wrapper{
     height: 100vh;
     background-color: black;
+    position: relative;
+}
+#cat-img{
+    position: absolute;
+    top: 1.2%;
+    right: 32%;
+    width: 148px;
+    filter: invert(100%);
+}
+
+#wool-img{
+    position: absolute;
+    top: 6.5%;
+    right: 39%;
+    width: 50px;
+    filter: invert(100%);
+}
+
+#mouse-img{
+    position: absolute;
+    top: 7.8%;
+    left: 30%;
+    width: 50px;
+    filter: invert(100%);
 }
 
 .fizzbuzz{
